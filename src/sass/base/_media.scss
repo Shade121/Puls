@@ -1,5 +1,5 @@
 @media (max-width: 1200px) {
-
+    
 }
 
 @media (max-width: 991px) {
@@ -15,6 +15,21 @@
         &__wrapper {
             justify-content: space-around;
         }
+    }
+    .title {
+        &_left {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    .consultation {
+        &__descr {
+            text-align: center;
+        }
+    }
+    .feed-form {
+        margin: 35px auto;
+        
     }
 }
 
@@ -49,6 +64,11 @@
         }
         &__icon {
             margin-top: 30px;
+        }
+    }
+    .consultation {
+        &__descr {
+            margin-top: 40px;
         }
     }
 }
@@ -110,13 +130,19 @@
             height: 40px;
             font-size: 14px;       
         }
+        &_submit {
+            height: 40px;
+        }
     }
         
     .title {
         font-size: 20px;
+        &_left {
+            font-size: 14px;
+        }
     }
     .advantages {
-
+        padding: 40px 0 30px 0;
         &__wrapper {
             margin-top: 30px;           
         }
@@ -136,4 +162,19 @@
             font-size: 14px;
         }
     }
+    .consultation {
+        min-height: 480px;
+        padding: 40px 0 30px 0;
+        &__descr {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+    }
+    .feed-form {
+        width: 270px;
+        input {
+            height: 35px;
+        }
+    }
+    
 }
