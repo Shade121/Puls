@@ -3,6 +3,9 @@
 }
 
 @media (max-width: 991px) {
+    // .container {
+    //     max-width: 610px;
+    // }
     .header {
         justify-content: space-around;
     }
@@ -28,12 +31,23 @@
         }
     }
     .feed-form {
-        margin: 35px auto;
-        
+        margin: 35px auto;       
+    }
+    .tns-item{
+        img {
+            width: 100%;
+        }
+    }
+    .prev {
+        display: none;
+    }
+    .next {
+        display: none;
     }
 }
 
 @media (max-width: 767px) {
+    
     .header {
         &__logo {
             width: 170px;
@@ -71,6 +85,7 @@
             margin-top: 40px;
         }
     }
+                
 }
 
 @media (max-width: 575px) {
@@ -111,7 +126,6 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-
         }
         &__icon {
             width: 163px;
@@ -120,8 +134,7 @@
         }
         &__link {
             font-size: 14px;
-        }
-        
+        }      
     }
     .button {
         &_main {
@@ -133,8 +146,7 @@
         &_submit {
             height: 40px;
         }
-    }
-        
+    }        
     .title {
         font-size: 20px;
         &_left {
@@ -164,9 +176,9 @@
     }
     .consultation {
         min-height: 480px;
-        padding: 40px 0 30px 0;
+        padding: 50px 0 30px 0;
         &__descr {
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 15px;
         }
     }
@@ -175,6 +187,5 @@
         input {
             height: 35px;
         }
-    }
-    
+    }   
 }
