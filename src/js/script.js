@@ -5,27 +5,21 @@ $(document).ready(function() {
     slideBy: 'page',
     autoplay: false, 
     controls: false,
-    
+    nav: false,
     responsive: {
-        320: {
-            nav: true                   
-        },
-        425: {
-            nav: true
-        },
-        640: {
-            nav: true                   
-        },
-        700: {
-            nav: true
-        },
-        900: {
-            nav: true,
-        },
-        1024: {
-            nav: false,
-        },
-    } 
+      320: {
+        nav: true,
+      },
+      575: {
+        nav: true,
+      },
+      767: {
+        nav: true,
+      },
+      991: {
+        nav: true,
+      }
+    }
   });
   
   document.querySelector('.prev').addEventListener('click', function () {
