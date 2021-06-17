@@ -76,8 +76,40 @@ $(document).ready(function() {
       })
   });
 
-  $('consultation-form').validate();
-  $('#consultation form').validate();
-  $('#order form').validate();
+  function valideForms(form){
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },       
+        phone: {
+          required: true
+        },            
+        email: {
+          required: true,
+          email:true
+        }
+      },
+      messages: {
+        name: {
+          required: "Пожалуйста, введите своё имя",
+          minlength: jQuery.validator.format("Введите минимум {0} символа!")
+        },
+        phone: {
+          required: "Пожалуйста, введите свой номер телефона",
+        },
+        email: {
+          required: "Пожалуйста, введите свой email",
+          email: "Ваш email должен быть формата name@domain.com"
+        }
+      }
+    });
+  };
   
+  valideForms('#consultation-form'),
+  valideForms('#consultation form'),
+  valideForms('#order form'),
+
+  $('input[name=phone]').mask("+38 (999) 999-99-99");
 });
