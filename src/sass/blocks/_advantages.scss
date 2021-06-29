@@ -8,7 +8,7 @@
         margin-top: 65px;
         
     }
-    &__icon {
+    &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -33,4 +33,13 @@
             text-decoration: underline;
         }
     }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+    
 }
