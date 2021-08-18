@@ -145,4 +145,29 @@ $(document).ready(function() {
   });
 
   new WOW().init();
+  const latlng = new google.maps.LatLng("55.7482", "37.6272");
+    const myOptions = {
+    zoom: 17,
+    center: latlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    const map = new google.maps.Map(document.getElementById("map"),myOptions);
+    map.setOptions({ 
+        mapTypeControl: false,
+        draggable: false,
+        scaleControl: false,
+        scrollwheel: false,
+        navigationControl: false,
+        streetViewControl: false,
+    });
+    
+    const marker = new google.maps.Marker({
+        position: {lat: 55.7479, lng: 37.62725},
+        map: map,
+        title: 'RunSmart',
+  //       icon: {
+  //           url: "icons/map.png",
+  //           scaledSize: new google.maps.Size(63, 63)
+	// }
+    });
 });
