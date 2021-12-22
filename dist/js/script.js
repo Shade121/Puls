@@ -4,8 +4,8 @@ $(document).ready(function() {
     dots: false,
     infinite: true,
     speed: 1200,
-    prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="icon/left.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="icon/right.svg"></button>',
     responsive: [
       {
         breakpoint: 991,
